@@ -37,12 +37,22 @@ namespace helppii
                             new Issue
                                 {
                                     Location = new GeoCoordinate(51.569593, 10.103504),
-                                    Title = "Foo"
+                                    Title = "Viininmaistelut"
                                 },
                             new Issue
                                 {
                                     Location = new GeoCoordinate(-45.569593, 1.103504),
-                                    Title = "Bar"
+                                    Title = "Sohva pitäis siirtää"
+                                },
+                            new Issue
+                                {
+                                    Location = new GeoCoordinate(60.2465, 24.8559),
+                                    Title = "Tarviis juttuseuraa"
+                                }, 
+                            new Issue
+                                {
+                                    Location = new GeoCoordinate(60.2, 24.8),
+                                    Title = "Talkooapua"
                                 }
                         }
             };
