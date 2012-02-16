@@ -46,6 +46,8 @@ namespace helppii
 
             if (tag == "ShowMap")
                 NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
+            else if (tag == "AddReq")
+                NavigationService.Navigate(new Uri("/NewIssue.xaml", UriKind.Relative));
         }
     }
 }
