@@ -133,19 +133,19 @@
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <DesignData Include="SampleData\IssueSampleData1.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-    </DesignData>
-    <DesignData Include="SampleData\IssuesViewModelSampleData.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-    </DesignData>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="SampleData\Images\Images_Files\image01.png" />
     <Resource Include="SampleData\Images\Images_Files\image02.png" />
     <Resource Include="SampleData\Images\Images_Files\image03.png" />
     <Resource Include="SampleData\Images\Images_Files\image04.png" />
     <Resource Include="SampleData\Images\Images_Files\image05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DesignData Include="SampleData\IssuesViewModelSampleData.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </DesignData>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bin\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />

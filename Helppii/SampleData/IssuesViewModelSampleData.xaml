@@ -1,53 +1,83 @@
-<helppii_ViewModels:IssuesViewModel xmlns:helppii_ViewModels="clr-namespace:helppii.ViewModels" xmlns:helppii="clr-namespace:helppii" xmlns:System_Device_Location="clr-namespace:System.Device.Location;assembly=System.Device">
+<helppii_ViewModels:IssuesViewModel xmlns:helppii_ViewModels="clr-namespace:helppii.ViewModels" xmlns:helppii="clr-namespace:helppii" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:System_Device_Location="clr-namespace:System.Device.Location;assembly=System.Device">
 	<helppii_ViewModels:IssuesViewModel.Issues>
-		<helppii:Issue Title="Nam maecenas cras">
+		<helppii:Issue Claimed="True" Description="Class nam cras sed" Time="02/17/2012 00:50:49" Title="Curabitur curae aliquam dis">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="349.23" Course="239.14" HorizontalAccuracy="734.24" IsUnknown="True" Longitude="360.47" Latitude="265.75" Speed="359.37" VerticalAccuracy="782.54"/>
+				<System_Device_Location:GeoCoordinate Altitude="634.76" Course="744.27" HorizontalAccuracy="465.66" IsUnknown="False" Longitude="771.99" Latitude="620.36" Speed="879.98" VerticalAccuracy="313.73"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Sed aliquam">
+		<helppii:Issue Claimed="True" Description="Vestibulum duis maecenas" Time="02/17/2012 00:50:49" Title="Aenean mauris nunc amet">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="592.19" Course="452.66" HorizontalAccuracy="689.81" IsUnknown="False" Longitude="769.42" Latitude="800.34" Speed="484.83" VerticalAccuracy="317.03"/>
+				<System_Device_Location:GeoCoordinate Altitude="140.43" Course="571.84" HorizontalAccuracy="790.76" IsUnknown="False" Longitude="181.8" Latitude="309.22" Speed="610.45" VerticalAccuracy="284.57"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Vestibulum duis class curabitur">
+		<helppii:Issue Claimed="True" Description="Donec integer phasellus ante" Time="02/17/2012 00:50:49" Title="Praesent adipiscing nullam arcu accumsan">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="344.84" Course="310.03" HorizontalAccuracy="794.14" IsUnknown="True" Longitude="455.9" Latitude="617.59" Speed="389.03" VerticalAccuracy="565.68"/>
+				<System_Device_Location:GeoCoordinate Altitude="712.39" Course="213.52" HorizontalAccuracy="553.84" IsUnknown="False" Longitude="395.62" Latitude="833.77" Speed="940.68" VerticalAccuracy="929.8"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Dis nunc">
+		<helppii:Issue Claimed="True" Description="Aptent parturient" Time="02/17/2012 00:50:49" Title="Quisque etiam">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="931.53" Course="698.23" HorizontalAccuracy="503.01" IsUnknown="False" Longitude="486.08" Latitude="895.59" Speed="630.67" VerticalAccuracy="214.19"/>
+				<System_Device_Location:GeoCoordinate Altitude="832.23" Course="371.08" HorizontalAccuracy="408.45" IsUnknown="False" Longitude="784.4" Latitude="710.46" Speed="441.71" VerticalAccuracy="535.33"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Curae phasellus adipiscing">
+		<helppii:Issue Claimed="True" Description="Vestibulum bibendum vivamus dictumst" Time="02/17/2012 00:50:49" Title="Eleifend facilisi fusce diam consequat">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="736.55" Course="284.68" HorizontalAccuracy="749.74" IsUnknown="True" Longitude="693.7" Latitude="114.73" Speed="998.04" VerticalAccuracy="389.18"/>
+				<System_Device_Location:GeoCoordinate Altitude="456.22" Course="287.24" HorizontalAccuracy="736.27" IsUnknown="False" Longitude="844.06" Latitude="569.02" Speed="566.06" VerticalAccuracy="948.33"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Praesent parturient donec">
+		<helppii:Issue Claimed="True" Description="Convallis est" Time="02/17/2012 00:50:49" Title="Lorem vestibulum">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="467.01" Course="135.17" HorizontalAccuracy="840.31" IsUnknown="False" Longitude="197.17" Latitude="818.88" Speed="509.25" VerticalAccuracy="567.66"/>
+				<System_Device_Location:GeoCoordinate Altitude="465.92" Course="603.73" HorizontalAccuracy="957.18" IsUnknown="False" Longitude="634.09" Latitude="810.55" Speed="401.12" VerticalAccuracy="696.9"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Integer vestibulum aenean etiam amet">
+		<helppii:Issue Claimed="True" Description="Hac eget elit aliquam" Time="02/17/2012 00:50:49" Title="Morbi nulla">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="909.39" Course="266.33" HorizontalAccuracy="950.05" IsUnknown="True" Longitude="173.13" Latitude="528.95" Speed="296.97" VerticalAccuracy="703.1"/>
+				<System_Device_Location:GeoCoordinate Altitude="117.91" Course="258.8" HorizontalAccuracy="161.64" IsUnknown="False" Longitude="181.59" Latitude="562.42" Speed="471.54" VerticalAccuracy="195.52"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Accumsan est consequat bibendum">
+		<helppii:Issue Claimed="True" Description="Proin leo adipiscing auctor" Time="02/17/2012 00:50:49" Title="Enim parturient">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="206.61" Course="568.17" HorizontalAccuracy="573.2" IsUnknown="False" Longitude="169.62" Latitude="663.33" Speed="417.7" VerticalAccuracy="540.91"/>
+				<System_Device_Location:GeoCoordinate Altitude="355.28" Course="547.31" HorizontalAccuracy="290.3" IsUnknown="False" Longitude="923.77" Latitude="956.83" Speed="468.03" VerticalAccuracy="802.53"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Mauris convallis quisque">
+		<helppii:Issue Claimed="True" Description="Aliquet dignissim vestibulum vestibulum" Time="02/17/2012 00:50:49" Title="Congue faucibus elementum habitant erat">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="331.22" Course="370.16" HorizontalAccuracy="874.38" IsUnknown="True" Longitude="668.35" Latitude="728.7" Speed="855.63" VerticalAccuracy="267.97"/>
+				<System_Device_Location:GeoCoordinate Altitude="473.18" Course="157.2" HorizontalAccuracy="909.9" IsUnknown="False" Longitude="538.27" Latitude="987.59" Speed="778.4" VerticalAccuracy="684.2"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
-		<helppii:Issue Title="Dignissim fusce lorem vivamus">
+		<helppii:Issue Claimed="True" Description="Mus augue blandit" Time="02/17/2012 00:50:49" Title="Adipiscing inceptos interdum parturient vestibulum">
+			<helppii:Issue.Id>
+				<System:Guid/>
+			</helppii:Issue.Id>
 			<helppii:Issue.Location>
-				<System_Device_Location:GeoCoordinate Altitude="940.07" Course="785.61" HorizontalAccuracy="175.71" IsUnknown="False" Longitude="318.99" Latitude="494.82" Speed="955.66" VerticalAccuracy="843.01"/>
+				<System_Device_Location:GeoCoordinate Altitude="384.6" Course="154.49" HorizontalAccuracy="740.19" IsUnknown="False" Longitude="144.38" Latitude="337.74" Speed="336.24" VerticalAccuracy="346.46"/>
 			</helppii:Issue.Location>
 		</helppii:Issue>
 	</helppii_ViewModels:IssuesViewModel.Issues>

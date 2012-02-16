@@ -39,14 +39,14 @@ namespace helppii
                                     Location = new GeoCoordinate(51.569593, 10.103504),
                                     Title = "Viininmaistelut",
                                     Description = "Heh juum, olis tollaset maistelut",
-                                    Id = new Guid()
+                                    Id = System.Guid.NewGuid()
                                 },
                             new Issue
                                 {
                                     Location = new GeoCoordinate(-45.569593, 1.103504),
                                     Title = "Sohva pitäis siirtää",
                                     Description = "Heh juum, olis tollanen sohva",
-                                    Id = new Guid()
+                                    Id = System.Guid.NewGuid()
 
                                 },
                             new Issue
@@ -54,14 +54,14 @@ namespace helppii
                                     Location = new GeoCoordinate(60.2465, 24.8559),
                                     Title = "Tarviis juttuseuraa",
                                     Description = "Heh juum, tarviis tollasta seuraa",
-                                    Id = new Guid()
+                                    Id = System.Guid.NewGuid()
                                 }, 
                             new Issue
                                 {
                                     Location = new GeoCoordinate(60.2, 24.8),
                                     Title = "Talkooapua",
                                     Description = "Heh juum, tarviis tollasta talkooapua",
-                                    Id = new Guid()
+                                    Id = System.Guid.NewGuid()
                                 }
                         }
             };
