@@ -22,7 +22,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="open helppies" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -32,8 +32,8 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="150" />
             </Grid.RowDefinitions>
-            <Slider x:Name="mySlider" Maximum="25" Minimum="0" Value="10" Grid.Row="0" />
-            <my:Map x:Name="myMap" ZoomLevel="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" Grid.Row="1">
+            <!--<Slider x:Name="mySlider" Maximum="25" Minimum="0" Value="10" Grid.Row="0" />-->
+            <my:Map x:Name="myMap" ZoomLevel="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" ZoomBarVisibility="Visible" Grid.Row="1">
                 <my:MapItemsControl ItemsSource="{Binding Issues}">
                     <my:MapItemsControl.ItemTemplate>
                         <DataTemplate>
@@ -45,7 +45,10 @@
             <ListBox Grid.Row="2" ItemsSource="{Binding Issues}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Button Content="{Binding Title}" />
+                        <StackPanel Orientation="Horizontal">
+                            <ListBoxItem Content="{Binding Title}" />
+                            <ListBoxItem Content=", 200m" />
+                        </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
