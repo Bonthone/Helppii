@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010 Express for Windows Phone
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helppii", "Helppii\Helppii.csproj", "{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helppii", "helppii\helppii.csproj", "{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31F7465A-D5CE-4CD0-8B0D-B24975B9EFDC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D62162C-9FB8-4D83-8F0D-5EED8270FD83}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

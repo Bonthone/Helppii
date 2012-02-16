@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{3b5e9a8d-0b61-4569-a9ac-646c42eabd87}" Title="Helppii" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Helppii author" Description="Sample description" Publisher="Helppii">
+  <App xmlns="" ProductID="{67e2dc9e-1514-4288-9b6e-dd8bf05337d5}" Title="helppii" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="helppii author" Description="Sample description" Publisher="helppii">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
@@ -23,11 +23,11 @@
       <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
     </Tasks>
     <Tokens>
-      <PrimaryToken TokenID="HelppiiToken" TaskName="_default">
+      <PrimaryToken TokenID="helppiiToken" TaskName="_default">
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>Helppii</Title>
+          <Title>helppii</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>
