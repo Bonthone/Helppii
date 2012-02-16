@@ -33,10 +33,17 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Slider x:Name="mySlider" Maximum="25" Minimum="0" Grid.Row="0" />
-            <my:Map x:Name="myMap" ZoomLevel="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" Grid.Row="1" />
-            <TextBox Text="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" Grid.Row="2" />
-            <Button Click="Button_Click" Content="Nappi"/>
+            <my:Map x:Name="myMap" ZoomLevel="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" Grid.Row="1">
+                <my:MapItemsControl ItemsSource="{Binding Issues}">
+                    <my:MapItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <my:Pushpin Location="{Binding Location}" />
+                        </DataTemplate>
+                    </my:MapItemsControl.ItemTemplate>
+                </my:MapItemsControl>
+            </my:Map>
         </Grid>
+        
     </Grid>
 
     <!--Sample code showing usage of ApplicationBar-->
@@ -51,4 +58,11 @@
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
+    <phone:PhoneApplicationPage.Resources>
+        <ControlTemplate x:Key="PushpinControlTemplate1" TargetType="my:Pushpin">
+            <Grid Height="116" Width="155">
+                <Button Content="{Binding Title}" />
+            </Grid>
+        </ControlTemplate>
+    </phone:PhoneApplicationPage.Resources>
 </phone:PhoneApplicationPage>

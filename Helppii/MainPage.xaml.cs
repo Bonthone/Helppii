@@ -36,7 +36,7 @@ namespace helppii
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
         }
     }
 }
