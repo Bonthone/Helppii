@@ -23,26 +23,26 @@
                 <ImageBrush ImageSource="Images/yhteisvastuubg_haalea.png"/>
             </controls:Panorama.Background>
  
-            <!--Panorama item one-->
+            <!-- requests -->
             <controls:PanoramaItem Header="requests" Foreground="#FF5C1A1A">
                 <!--Double line list with text wrapping-->
                 <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent" Foreground="Black">
-                    <ListBoxItem Content="add request" FontSize="48" Tag="AddReq"/>
-                    <ListBoxItem Content="todo" FontSize="48" Tag="ToDo"/>
+                    <ListBoxItem Content="request favor" FontSize="48" Tag="AddReq"/>
+                    <ListBoxItem Content="vedä bönthöö" FontSize="48" Tag="ToDo"/>
                     <ListBoxItem Content="requests near you" FontSize="48"  Tag="ShowMap"/>
                 </ListBox>
             </controls:PanoramaItem>
  
-            <!--Panorama item two-->
-            <!--Use 'Orientation="Horizontal"' to enable a panel that lays out horizontally-->
-            <controls:PanoramaItem Header="recent stories" Foreground="#FF5C1A1A">
+            <!-- recent stories -->
+            <controls:PanoramaItem Header="recent favors" Foreground="#FF5C1A1A">
                 <!--Double line list with image placeholder and text wrapping-->
                 <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Foreground="Black">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
                                 <!--Replace rectangle with image-->
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <!--<Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>-->
+                                <Image Source="Images/fbthumb_henri.jpg" Margin="12,0,9,0"/>
                                 <StackPanel Width="311">                                    
                                     <TextBlock Text="frendi yks" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="frendi kaks" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
@@ -51,6 +51,31 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+            </controls:PanoramaItem>
+
+            <!-- todo -->
+            <controls:PanoramaItem Header="todo" Foreground="#FF5C1A1A">
+                <!--Double line list with image placeholder and text wrapping-->
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Foreground="Black">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
+                                <!--Replace rectangle with image-->
+                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <StackPanel Width="311">
+                                    <TextBlock Text="t0d0 yks" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                    <TextBlock Text="todo kaks" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!-- sponsor -->
+            <controls:PanoramaItem Header="sponsor" Foreground="#FF5C1A1A">
+                <!--Double line list with image placeholder and text wrapping-->
+                <Image Source="Images/fbthumb_henri.jpg" Margin="12,0,9,0"/>
             </controls:PanoramaItem>
         </controls:Panorama>
     </Grid>
