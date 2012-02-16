@@ -24,23 +24,18 @@
             </controls:Panorama.Background>-->
  
             <!--Panorama item one-->
-            <controls:PanoramaItem Header="requests">
+            <controls:PanoramaItem Header="requests" Foreground="#FFFFD200">
                 <!--Double line list with text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="0,0,0,17" Width="432" Height="78">
-                                <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
+                <ListBox Margin="0,0,-12,0" SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                    <ListBoxItem Content="add request" FontSize="48"/>
+                    <ListBoxItem Content="todo" FontSize="48"/>
+                    <ListBoxItem Content="requests near you" FontSize="48"/>
                 </ListBox>
             </controls:PanoramaItem>
  
             <!--Panorama item two-->
             <!--Use 'Orientation="Horizontal"' to enable a panel that lays out horizontally-->
-            <controls:PanoramaItem Header="recent stories">
+            <controls:PanoramaItem Header="recent stories" Foreground="Red">
                 <!--Double line list with image placeholder and text wrapping-->
                 <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}">
                     <ListBox.ItemTemplate>
