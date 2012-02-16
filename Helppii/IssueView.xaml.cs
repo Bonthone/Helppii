@@ -13,9 +13,9 @@ using Microsoft.Phone.Controls;
 
 namespace helppii
 {
-    public partial class Page2 : PhoneApplicationPage
+    public partial class IssueView : PhoneApplicationPage
     {
-        public Page2()
+        public IssueView()
         {
             InitializeComponent();
         }
