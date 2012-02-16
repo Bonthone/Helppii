@@ -26,7 +26,7 @@
             <!--Panorama item one-->
             <controls:PanoramaItem Header="requests" Foreground="#FFFFD200">
                 <!--Double line list with text wrapping-->
-                <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent">
+                <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent" Foreground="Black">
                     <ListBoxItem Content="add request" FontSize="48" Tag="AddReq"/>
                     <ListBoxItem Content="todo" FontSize="48" Tag="ToDo"/>
                     <ListBoxItem Content="requests near you" FontSize="48"  Tag="ShowMap"/>
@@ -37,7 +37,7 @@
             <!--Use 'Orientation="Horizontal"' to enable a panel that lays out horizontally-->
             <controls:PanoramaItem Header="recent stories" Foreground="Red">
                 <!--Double line list with image placeholder and text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}">
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Foreground="Black">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
