@@ -38,26 +38,30 @@ namespace helppii
                                 {
                                     Location = new GeoCoordinate(51.569593, 10.103504),
                                     Title = "Viininmaistelut",
-                                    Description = "Heh juum, olis tollaset maistelut"
+                                    Description = "Heh juum, olis tollaset maistelut",
+                                    ID = 1
                                 },
                             new Issue
                                 {
                                     Location = new GeoCoordinate(-45.569593, 1.103504),
                                     Title = "Sohva pitäis siirtää",
-                                    Description = "Heh juum, olis tollanen sohva"
+                                    Description = "Heh juum, olis tollanen sohva",
+                                    ID = 2
 
                                 },
                             new Issue
                                 {
                                     Location = new GeoCoordinate(60.2465, 24.8559),
                                     Title = "Tarviis juttuseuraa",
-                                    Description = "Heh juum, tarviis tollasta seuraa"
+                                    Description = "Heh juum, tarviis tollasta seuraa",
+                                    ID = 3
                                 }, 
                             new Issue
                                 {
                                     Location = new GeoCoordinate(60.2, 24.8),
                                     Title = "Talkooapua",
-                                    Description = "Heh juum, tarviis tollasta talkooapua"
+                                    Description = "Heh juum, tarviis tollasta talkooapua",
+                                    ID = 4
                                 }
                         }
             };
@@ -77,6 +81,13 @@ namespace helppii
         private void Show_Zoom(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Issue i = ((ListBox)sender).SelectedItem as Issue;
+            string id = i.ID.ToString();
+            NavigationService.Navigate(new Uri("/IssueView.xaml?id=" + id, UriKind.RelativeOrAbsolute)); 
         }
 
     }

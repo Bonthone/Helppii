@@ -21,6 +21,20 @@ namespace helppii
         private string _description;
         private DateTime _time;
         private bool _claimed;
+        private Guid _id;
+
+        public Guid Id
+        {
+            get { return _id; }
+            set
+            {
+                if (_id != value)
+                {
+                    _id = value;
+                    OnPropertyChanged("Id");
+                }
+            }
+        }
 
         public string Title
         {

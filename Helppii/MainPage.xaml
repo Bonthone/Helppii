@@ -19,9 +19,9 @@
  
         <!--Panorama control-->
         <controls:Panorama Title="helppii">
-            <!--<controls:Panorama.Background>
-                <ImageBrush ImageSource="PanoramaBackground.png"/>
-            </controls:Panorama.Background>-->
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="Images/yhteisvastuubg_haalea.png"/>
+            </controls:Panorama.Background>
  
             <!--Panorama item one-->
             <controls:PanoramaItem Header="requests" Foreground="#FFFFD200">
