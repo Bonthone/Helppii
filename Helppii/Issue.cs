@@ -19,6 +19,7 @@ namespace helppii
         private GeoCoordinate _location;
         private string _title;
         private string _description;
+        private DateTime _time;
 
         public string Title
         {
@@ -54,6 +55,19 @@ namespace helppii
                 {
                     _description = value;
                     OnPropertyChanged("Description");
+                }
+            }
+        }
+
+        public DateTime Time
+        {
+            get { return _time; }
+            set
+            {
+                if (_time != value)
+                {
+                    _time = value;
+                    OnPropertyChanged("Time");
                 }
             }
         }
