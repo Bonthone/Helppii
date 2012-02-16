@@ -15,7 +15,12 @@
 	<phone:PhoneApplicationPage.Resources>
 		<DataTemplate x:Key="ItemTemplate">
 			<StackPanel>
-				<Image Source="{Binding EventTypeImage}" HorizontalAlignment="Left" Height="64" Width="64"/>
+
+				<Rectangle Fill="{Binding EventColor}" Height="70" Stroke="Black"  Width="70">
+    <Rectangle.OpacityMask>
+        <ImageBrush Stretch="Fill" ImageSource="{Binding EventTypeImage}"/>
+    </Rectangle.OpacityMask>
+</Rectangle>
 			</StackPanel>
 		</DataTemplate>
 	</phone:PhoneApplicationPage.Resources>
@@ -43,7 +48,7 @@
 				<RowDefinition Height="*"/>
 			</Grid.RowDefinitions>
 			<TextBox Grid.Row="1" Margin="8,29,8,0" TextWrapping="Wrap" Text="title" d:LayoutOverrides="Height"/>
-			<ListBox ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="69" Grid.Row="2" VerticalAlignment="Top" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" Margin="0,31,0,0">
+			<ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="69" Grid.Row="2" VerticalAlignment="Top" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" Margin="8,31,0,0" Background="{x:Null}">
 <ListBox.ItemsPanel>
 
 <ItemsPanelTemplate>
@@ -55,7 +60,7 @@
 </ListBox.ItemsPanel>
 				
 </ListBox>
-			<TextBlock Margin="149,104,136,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Collection[0].EventTypeName}" VerticalAlignment="Top" d:LayoutOverrides="Width"/>
+			<TextBlock Margin="149,104,136,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding SelectedItem.EventTypeName, ElementName=listBox}" VerticalAlignment="Top" d:LayoutOverrides="Width"/>
 			<TextBox Margin="8,34,8,0" Grid.Row="4" TextWrapping="Wrap" Text="description" VerticalAlignment="Top" Height="151" InputScope="Text" VerticalScrollBarVisibility="Auto"/>
 		</Grid>
 	</Grid>

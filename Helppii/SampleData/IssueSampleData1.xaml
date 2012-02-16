@@ -1,5 +1,0 @@
-<helppii:Issue xmlns:helppii="clr-namespace:helppii" xmlns:System_Device_Location="clr-namespace:System.Device.Location;assembly=System.Device" Claimed="True" Description="Vestibulum curabitur aliquam" ID="41" Time="02/17/2012 00:00:19" Title="Aenean cras">
-	<helppii:Issue.Location>
-		<System_Device_Location:GeoCoordinate Altitude="418.01" Course="314.83" HorizontalAccuracy="330.52" IsUnknown="False" Longitude="964.65" Latitude="486.49" Speed="311.76" VerticalAccuracy="338.59"/>
-	</helppii:Issue.Location>
-</helppii:Issue>
