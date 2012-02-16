@@ -19,6 +19,8 @@ namespace helppii
         private GeoCoordinate _location;
         private string _title;
         private string _description;
+        private DateTime _time;
+        private bool _claimed;
 
         public string Title
         {
@@ -58,6 +60,32 @@ namespace helppii
             }
         }
 
+        public DateTime Time
+        {
+            get { return _time; }
+            set
+            {
+                if (_time != value)
+                {
+                    _time = value;
+                    OnPropertyChanged("Time");
+                }
+            }
+        }
+
+        public bool Claimed
+        {
+            get { return _claimed; }
+            set
+            {
+                if (_claimed != value)
+                {
+                    _claimed = value;
+                    OnPropertyChanged("Claimed");
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void OnPropertyChanged(string propertyName)
@@ -68,9 +96,5 @@ namespace helppii
             }
         }
 
-        public string Test()
-        {
-            return "test";
-        }
     }
 }

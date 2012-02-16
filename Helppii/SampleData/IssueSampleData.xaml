@@ -1,0 +1,5 @@
+<helppii:Issue xmlns:helppii="clr-namespace:helppii" xmlns:System_Device_Location="clr-namespace:System.Device.Location;assembly=System.Device" Description="Aenean class curae aliquam curabitur" Title="Integer maecenas mauris donec">
+	<helppii:Issue.Location>
+		<System_Device_Location:GeoCoordinate Altitude="995.08" Course="589.6" HorizontalAccuracy="165.09" IsUnknown="True" Longitude="763.26" Latitude="112.91" Speed="327.63" VerticalAccuracy="186.57"/>
+	</helppii:Issue.Location>
+</helppii:Issue>
