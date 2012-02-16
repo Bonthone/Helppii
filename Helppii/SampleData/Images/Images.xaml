@@ -5,15 +5,15 @@
 -->
 <SampleData:Images xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Images" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <SampleData:Images.Collection>
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image01.png" EventTypeName="Maecenas praesent" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image02.png" EventTypeName="Accumsan" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image03.png" EventTypeName="Bibendum aenean" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image04.png" EventTypeName="Aliquam" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image05.png" EventTypeName="Mauris cras" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image01.png" EventTypeName="Nullam integer" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image02.png" EventTypeName="Dictumst" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image03.png" EventTypeName="Quisque" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image04.png" EventTypeName="Vivamus aptent" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/image05.png" EventTypeName="Aliquam" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_car.png" EventTypeName="Maecenas praesent" EventColor="#FF8DD3C7" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_f.png" EventTypeName="Accumsan" EventColor="#FFFFFFB3" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_food.png" EventTypeName="Bibendum aenean" EventColor="#FFBEBADA" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_car.png" EventTypeName="Aliquam" EventColor="#FFFB8072" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_f.png" EventTypeName="Mauris cras" EventColor="#FF80B1D3" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_food.png" EventTypeName="Nullam integer" EventColor="#FFFDB462" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_car.png" EventTypeName="Dictumst" EventColor="#FFB3DE69" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_f.png" EventTypeName="Quisque" EventColor="#FFFCCDE5" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_food.png" EventTypeName="Vivamus aptent" EventColor="#FFD9D9D9" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_car.png" EventTypeName="Aliquam" EventColor="#FFBC80BD" />
   </SampleData:Images.Collection>
 </SampleData:Images>

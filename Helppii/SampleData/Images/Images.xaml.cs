@@ -49,6 +49,10 @@ namespace Expression.Blend.SampleData.Images
 		}
 	}
 
+	public class ItemCollection : System.Collections.ObjectModel.ObservableCollection<Item>
+	{ 
+	}
+
 	public class Item : System.ComponentModel.INotifyPropertyChanged
 	{
 		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
@@ -98,10 +102,25 @@ namespace Expression.Blend.SampleData.Images
 				}
 			}
 		}
-	}
 
-	public class ItemCollection : System.Collections.ObjectModel.ObservableCollection<Item>
-	{ 
+		private string _EventColor = string.Empty;
+
+		public string EventColor
+		{
+			get
+			{
+				return this._EventColor;
+			}
+
+			set
+			{
+				if (this._EventColor != value)
+				{
+					this._EventColor = value;
+					this.OnPropertyChanged("EventColor");
+				}
+			}
+		}
 	}
 #endif
 }
