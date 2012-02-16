@@ -34,9 +34,18 @@ namespace helppii
             }
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void MainMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
+            object item = this.MainMenu.SelectedItem;
+            
+            if (item == null)
+                return;
+
+            ListBoxItem listItem = item as ListBoxItem;
+            string tag = (string)listItem.Tag;
+
+            if (tag == "ShowMap")
+                NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
         }
     }
 }
