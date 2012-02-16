@@ -42,7 +42,7 @@
                     </my:MapItemsControl.ItemTemplate>
                 </my:MapItemsControl>
             </my:Map>
-            <ListBox Grid.Row="2" ItemsSource="{Binding Issues}">
+            <ListBox Grid.Row="2" ItemsSource="{Binding Issues}" SelectionChanged="ListBox_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">

@@ -18,6 +18,19 @@ namespace helppii
         public IssueView()
         {
             InitializeComponent();
+
+
+        }
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            string id = "";
+
+            if (NavigationContext.QueryString.TryGetValue("id", out id))
+                textBlock1.Text = id;
+                
         }
     }
 }

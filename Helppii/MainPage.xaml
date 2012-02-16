@@ -18,15 +18,15 @@
     <Grid x:Name="LayoutRoot" Background="Transparent">
  
         <!--Panorama control-->
-        <controls:Panorama Title="helppii">
-            <!--<controls:Panorama.Background>
-                <ImageBrush ImageSource="PanoramaBackground.png"/>
-            </controls:Panorama.Background>-->
+        <controls:Panorama Title="helppii" Foreground="#FF5C1A1A">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="Images/yhteisvastuubg_haalea.png"/>
+            </controls:Panorama.Background>
  
             <!--Panorama item one-->
-            <controls:PanoramaItem Header="requests" Foreground="#FFFFD200">
+            <controls:PanoramaItem Header="requests" Foreground="#FF5C1A1A">
                 <!--Double line list with text wrapping-->
-                <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent">
+                <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent" Foreground="Black">
                     <ListBoxItem Content="add request" FontSize="48" Tag="AddReq"/>
                     <ListBoxItem Content="todo" FontSize="48" Tag="ToDo"/>
                     <ListBoxItem Content="requests near you" FontSize="48"  Tag="ShowMap"/>
@@ -35,9 +35,9 @@
  
             <!--Panorama item two-->
             <!--Use 'Orientation="Horizontal"' to enable a panel that lays out horizontally-->
-            <controls:PanoramaItem Header="recent stories" Foreground="Red">
+            <controls:PanoramaItem Header="recent stories" Foreground="#FF5C1A1A">
                 <!--Double line list with image placeholder and text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}">
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Foreground="Black">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
