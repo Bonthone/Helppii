@@ -20,6 +20,7 @@
     <xs:attribute blend:FormatParameters="Images\EventTypes" name="EventTypeImage" type="tns:Basic-Image" />
     <xs:attribute blend:FormatParameters="2,8" name="EventTypeName" type="xs:string" />
     <xs:attribute blend:Format="Colors" name="EventColor" type="xs:string" />
+    <xs:attribute blend:Format="Date" name="EventDate" type="xs:string" />
   </xs:complexType>
   <xs:simpleType name="Basic-Image">
     <xs:restriction base="xs:anyURI" />
