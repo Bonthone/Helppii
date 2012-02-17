@@ -32,6 +32,7 @@
             <TextBlock x:Name="textBlock2" />
                 <Button x:Name="ClaimBox" Content="Claim" Click="ClaimBox_Click" />
                 <Button x:Name="Cancelbox" Content="Cancel" Click="Cancelbox_Click" Visibility="Collapsed" />
+                <Button x:Name="MainmenuBox" Content="Main menu" Click="Mainmenu_Click" />
             </StackPanel>
         </Grid>
     </Grid>

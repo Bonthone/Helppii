@@ -50,11 +50,14 @@ namespace helppii
                 index = int.Parse(selectedIndex);
                 item = App.ViewModel.Items[index];
                 DataContext = item;
+
                 textBlock2.Text = item.Location.ToString();
+
                 if (NavigationContext.QueryString.TryGetValue("new", out isNew))
                 {
                     ClaimBox.Visibility = System.Windows.Visibility.Collapsed;
                     Cancelbox.Visibility = System.Windows.Visibility.Visible;
+                    textBlock2.Visibility = System.Windows.Visibility.Collapsed;
                 }
             }
         }
@@ -86,6 +89,11 @@ namespace helppii
             {
                 NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.RelativeOrAbsolute));
             }
+        }
+
+        private void Mainmenu_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
