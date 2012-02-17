@@ -68,5 +68,17 @@ namespace helppii
             MainListBox.SelectedIndex = -1;
         }
 
+        private void Pushpin_Tap(object sender, GestureEventArgs e)
+        {
+            int i = 0;
+            foreach ( ItemViewModel item in App.ViewModel.Items)
+            {
+                if (item.Location == (sender as Pushpin).Location)
+                    break;
+                i++;
+            }
+            NavigationService.Navigate(new Uri("/IssueView.xaml?selectedItem=" + i, UriKind.Relative));
+        }
+
     }
 }
