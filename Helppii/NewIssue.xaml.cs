@@ -10,11 +10,14 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.Device.Location;
 
 namespace helppii
 {
     public partial class NewIssue : PhoneApplicationPage
     {
+        GeoCoordinateWatcher watcher;
+
         public NewIssue()
         {
             InitializeComponent();
@@ -22,6 +25,9 @@ namespace helppii
 
         private void ApplicationBarSaveButton_Click(object sender, EventArgs e)
         {
+            GeoCoordinateWatcher watcher = new GeoCoordinateWatcher(GeoPositionAccuracy.High);
+            watcher.Start();
+            App.ViewModel.Items.Add(new ItemViewModel { Title = TitleTextBox.Text, Location = watcher.Position.Location, Description = description.Text });
             NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.RelativeOrAbsolute));
         }
 

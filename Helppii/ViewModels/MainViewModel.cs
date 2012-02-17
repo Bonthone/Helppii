@@ -27,7 +27,7 @@ namespace helppii
         /// <summary>
         /// A collection for ItemViewModel objects.
         /// </summary>
-        public ObservableCollection<ItemViewModel> Items { get; private set; }
+        public ObservableCollection<ItemViewModel> Items { get; set; }
 
         private string _sampleProperty = "Sample Runtime Property Value";
         /// <summary>
