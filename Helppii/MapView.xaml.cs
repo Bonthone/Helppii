@@ -40,7 +40,6 @@ namespace helppii
         void watcher_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {
             myMap.Center = e.Position.Location;
-            myMap.ZoomLevel = 10;
 
             //Pushpin pin1 = new Pushpin();
             //pin1.Location = e.Position.Location;

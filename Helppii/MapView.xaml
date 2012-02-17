@@ -32,8 +32,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="150" />
             </Grid.RowDefinitions>
-            <!--<Slider x:Name="mySlider" Maximum="25" Minimum="0" Value="10" Grid.Row="0" />-->
-            <my:Map x:Name="myMap" ZoomLevel="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" ZoomBarVisibility="Visible" Grid.Row="1">
+            <my:Map x:Name="myMap" ZoomLevel="14" ZoomBarVisibility="Visible" Grid.Row="1">
                 <my:MapItemsControl ItemsSource="{Binding Items}">
                     <my:MapItemsControl.ItemTemplate>
                         <DataTemplate>
