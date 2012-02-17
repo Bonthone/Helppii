@@ -13,7 +13,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="my:Pushpin">
-                        <Image Width="40" Height="40" Source="Images/icon_car.png" />
+                        <Image Width="40" Height="40" Source="{Binding SourcePath}" />
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
