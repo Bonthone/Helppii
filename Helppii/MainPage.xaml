@@ -13,9 +13,18 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
+	<phone:PhoneApplicationPage.Resources>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}"/>
+				<Image Source="{Binding Property2}" HorizontalAlignment="Left" Height="64" Width="64"/>
+				<TextBlock Text="{Binding Property3}"/>
+			</StackPanel>
+		</DataTemplate>
+	</phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Transparent" DataContext="{Binding Source={StaticResource RecentFavors}}">
  
         <!--Panorama control-->
         <controls:Panorama Title="helppii" Foreground="#FF5C1A1A">
@@ -36,19 +45,19 @@
             <!-- recent stories -->
             <controls:PanoramaItem Header="recent favors" Foreground="#FF5C1A1A">
                 <!--Double line list with image placeholder and text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Foreground="Black">
-                    <ListBox.ItemTemplate>
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Collection}" Foreground="Black">
+                	<ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Image Source="Images/fbthumb_henri.jpg" Margin="12,0,9,0" Width="75"/>
+                                <Image Source="{Binding Property2}" Margin="12,0,9,0" Width="75"/>
                                 <StackPanel Width="311">
-                                    <TextBlock Foreground="black" Text="Friend Name" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                    <TextBlock Foreground="black" Text="His most recent favor." TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                    <TextBlock Foreground="black" Text="{Binding Property1}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                    <TextBlock Foreground="black" Text="{Binding Property3}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
-                </ListBox>
+					</ListBox>
             </controls:PanoramaItem>
 
             <!-- todo -->

@@ -81,6 +81,9 @@
     <Compile Include="NewIssue.xaml.cs">
       <DependentUpon>NewIssue.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SampleData\RecentFavors\RecentFavors.xaml.cs">
+      <DependentUpon>RecentFavors.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SampleData\RecentFavors\RecentFavors.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +139,7 @@
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
     <DesignTimeOnly Include="SampleData\Images\Images.xsd" />
+    <DesignTimeOnly Include="SampleData\RecentFavors\RecentFavors.xsd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">
@@ -167,6 +175,9 @@
     <Resource Include="Images\icon_chat.png" />
     <Resource Include="Images\icon_trade.png" />
     <Content Include="SplashScreenImage.jpg" />
+    <Resource Include="SampleData\RecentFavors\RecentFavors_Files\fbthumb_henri.jpg" />
+    <Resource Include="SampleData\RecentFavors\RecentFavors_Files\fbthumb_joonas.jpg" />
+    <Resource Include="SampleData\RecentFavors\RecentFavors_Files\fbthumb_mikael.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="SampleData\Images\Images_Files\icon_car.png" />

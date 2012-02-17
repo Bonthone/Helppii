@@ -3,11 +3,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
-    xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Images" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
-    x:Class="helppii.App" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps" >
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Images" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps" xmlns:SampleData1="clr-namespace:Expression.Blend.SampleData.RecentFavors" mc:Ignorable="d" 
+    x:Class="helppii.App" >
 
     <!--Application Resources-->
     <Application.Resources>
+    	<SampleData1:RecentFavors x:Key="RecentFavors" d:IsDataSource="True"/>
     	<SampleData:Images x:Key="Images" d:IsDataSource="True"/>
         <Style TargetType="my:Pushpin" x:Key="PushpinStyle">
             <Setter Property="Template">
