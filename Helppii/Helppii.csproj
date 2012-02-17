@@ -167,8 +167,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="SampleData\Images\Images_Files\icon_car.png" />
+    <Resource Include="SampleData\Images\Images_Files\icon_cat.png" />
+    <Resource Include="SampleData\Images\Images_Files\icon_chat.png" />
     <Resource Include="SampleData\Images\Images_Files\icon_f.png" />
     <Resource Include="SampleData\Images\Images_Files\icon_food.png" />
+    <Resource Include="SampleData\Images\Images_Files\icon_trade.png" />
     <Resource Include="SampleData\Images\Images_Files\image01.png" />
     <Resource Include="SampleData\Images\Images_Files\image02.png" />
     <Resource Include="SampleData\Images\Images_Files\image03.png" />
