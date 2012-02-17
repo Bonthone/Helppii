@@ -146,6 +146,9 @@
     <Resource Include="Images\fbthumb_joonas.jpg" />
     <Resource Include="Images\fbthumb_mikael.jpg" />
     <Resource Include="Images\tule-keraajaksi.png" />
+    <Resource Include="Images\EventTypes\icon_car.png" />
+    <Resource Include="Images\EventTypes\icon_f.png" />
+    <Resource Include="Images\EventTypes\icon_food.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
