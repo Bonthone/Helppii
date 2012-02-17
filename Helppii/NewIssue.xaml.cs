@@ -28,7 +28,8 @@ namespace helppii
             GeoCoordinateWatcher watcher = new GeoCoordinateWatcher(GeoPositionAccuracy.High);
             watcher.Start();
             App.ViewModel.Items.Add(new ItemViewModel { Title = TitleTextBox.Text, Location = watcher.Position.Location, Description = description.Text });
-            NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.RelativeOrAbsolute));
+            int index = App.ViewModel.Items.Count - 1;
+            NavigationService.Navigate(new Uri("/IssueView.xaml?selectedItem=" + index, UriKind.RelativeOrAbsolute));
         }
 
         private void ApplicationBarCancelButton_Click(object sender, EventArgs e)
