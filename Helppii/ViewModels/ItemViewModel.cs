@@ -10,70 +10,71 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using System.Device.Location;
 
 namespace helppii
 {
     public class ItemViewModel : INotifyPropertyChanged
     {
-        private string _lineOne;
+        private string _title;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
         /// </summary>
         /// <returns></returns>
-        public string LineOne
+        public string Title
         {
             get
             {
-                return _lineOne;
+                return _title;
             }
             set
             {
-                if (value != _lineOne)
+                if (value != _title)
                 {
-                    _lineOne = value;
-                    NotifyPropertyChanged("LineOne");
+                    _title = value;
+                    NotifyPropertyChanged("Title");
                 }
             }
         }
 
-        private string _lineTwo;
+        private GeoCoordinate _location;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
         /// </summary>
         /// <returns></returns>
-        public string LineTwo
+        public GeoCoordinate Location
         {
             get
             {
-                return _lineTwo;
+                return _location;
             }
             set
             {
-                if (value != _lineTwo)
+                if (value != _location)
                 {
-                    _lineTwo = value;
-                    NotifyPropertyChanged("LineTwo");
+                    _location = value;
+                    NotifyPropertyChanged("Location");
                 }
             }
         }
 
-        private string _lineThree;
+        private string _description;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
         /// </summary>
         /// <returns></returns>
-        public string LineThree
+        public string Description
         {
             get
             {
-                return _lineThree;
+                return _description;
             }
             set
             {
-                if (value != _lineThree)
+                if (value != _description)
                 {
-                    _lineThree = value;
-                    NotifyPropertyChanged("LineThree");
+                    _description = value;
+                    NotifyPropertyChanged("Description");
                 }
             }
         }

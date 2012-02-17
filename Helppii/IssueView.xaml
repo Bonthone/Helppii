@@ -27,7 +27,10 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock x:Name="textBlock1" />
+            <StackPanel>
+            <TextBlock x:Name="textBlock1" Text="{Binding Description}" />
+            <TextBlock x:Name="textBlock2" />
+            </StackPanel>
         </Grid>
     </Grid>
  

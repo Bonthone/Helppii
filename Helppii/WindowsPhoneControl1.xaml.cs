@@ -9,13 +9,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using Microsoft.Phone.Controls;
 
 namespace helppii
 {
-    public partial class NewIssue : PhoneApplicationPage
+    public partial class WindowsPhoneControl1 : UserControl
     {
-        public NewIssue()
+        public WindowsPhoneControl1()
         {
             InitializeComponent();
         }
