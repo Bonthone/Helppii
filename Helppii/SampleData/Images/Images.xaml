@@ -5,8 +5,11 @@
 -->
 <SampleData:Images xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Images" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <SampleData:Images.Collection>
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_car.png" EventTypeName="Kimppakyyti" EventColor="#FF1BA1E2" EventDate="November 5, 2003" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_f.png" EventTypeName="FUU FUU" EventColor="#FFF09609" EventDate="December 29, 2006" />
-    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_food.png" EventTypeName="Lounas" EventColor="#FF339933" EventDate="January 19, 2004" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_car.png" EventTypeName="Carpool" EventColor="#FF1BA1E2" EventDate="November 5, 2003" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_f.png" EventTypeName="General favor" EventColor="#FFF09609" EventDate="December 29, 2006" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_food.png" EventTypeName="Dining company" EventColor="#FF339933" EventDate="January 19, 2004" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_trade.png" EventTypeName="Used goods" EventColor="#FF8DD3C7" EventDate="November 5, 2003" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_cat.png" EventTypeName="Pet care" EventColor="#FFFFA377" EventDate="December 29, 2006" />
+    <SampleData:Item EventTypeImage="/helppii;component/SampleData/Images/Images_Files/icon_chat.png" EventTypeName="Socializing" EventColor="#FFFFFFB3" EventDate="January 19, 2004" />
   </SampleData:Images.Collection>
 </SampleData:Images>
