@@ -26,10 +26,10 @@
             <!-- favors -->
             <controls:PanoramaItem Header="favors" Foreground="#FF5C1A1A">
                 <!--Double line list with text wrapping-->
-                <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent" Foreground="Black">
+                <ListBox x:Name="MainMenu" Margin="0,0,-12,0" Background="Transparent" Foreground="Black">
                     <ListBoxItem Content="request favor" FontSize="48" Tag="AddReq" Tap="ListBoxItem_Tap"/>
-                    <ListBoxItem Content="completed favors" FontSize="48" Tag="Completed"/>
-                    <ListBoxItem Content="requests near you" FontSize="48" Tag="ShowMap"/>
+                    <ListBoxItem Content="completed favors" FontSize="48" Tag="Completed" Tap="ListBoxItem_Tap"/>
+                    <ListBoxItem Content="requests near you" FontSize="48" Tag="ShowMap" Tap="ListBoxItem_Tap"/>
                 </ListBox>
             </controls:PanoramaItem>
  
@@ -71,10 +71,10 @@
             </controls:PanoramaItem>
 
             <!-- sponsor -->
-            <controls:PanoramaItem Header="sponsor" Foreground="#FF5C1A1A">
+            <controls:PanoramaItem Header="yhteisvastuu" Foreground="#FF5C1A1A">
                 <ListBox Margin="0,0,-12,0" Foreground="Black">
                     <StackPanel>
-                        <TextBlock Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}">Helppii's sponsor of the month is</TextBlock>
+                        <TextBlock Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Text="Helppii's partner of the month is"/>
                         <TextBlock FontWeight="Bold" Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}">Yhteisvastuukeräys.</TextBlock>
                         <TextBlock TextWrapping="Wrap" Margin="0,30,0,0" Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}">Yhteisvastuu on lähimmäisenrakkauden kansanliike ja evankelis-luterilaisen kirkon vuosittainen suurkeräys, joka auttaa hädänalaisia syntyperään, uskontoon tai poliittiseen vakaumukseen katsomatta Suomessa ja kehitysmaissa. 60 % tuotosta menee Kirkon Ulkomaanavun välityksellä kehitysyhteistyöhön ja katastrofiapuun. 20 % käytetään vuosittain valittavaan kohteeseen Suomessa ja 20 % kirkon ja seurakuntien tekemään avustustyöhön.</TextBlock>
                         <Button Click="Button_Click" Height="180" BorderBrush="{x:Null}">
@@ -88,9 +88,9 @@
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="Images/appbar.feature.settings.rest.png" Text="Settings" Click="ApplicationBarIconButton_Click"/>
-            <shell:ApplicationBar.MenuItems>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized">
+          <!--  <shell:ApplicationBarIconButton IconUri="Images/appbar.feature.settings.rest.png" Text="Settings" Click="ApplicationBarIconButton_Click"/>
+          -->  <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="Settings" Click="ApplicationBarMenuItem_Click"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>

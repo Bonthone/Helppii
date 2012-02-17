@@ -37,7 +37,7 @@ namespace helppii
 
         private void ApplicationBarMenuItem_Click(object sender, EventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/PropertiesView.xaml", UriKind.Relative));
         }
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
