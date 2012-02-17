@@ -23,11 +23,11 @@
                 <ImageBrush ImageSource="Images/yhteisvastuubg_haalea.png"/>
             </controls:Panorama.Background>
  
-            <!-- requests -->
+            <!-- favors -->
             <controls:PanoramaItem Header="favors" Foreground="#FF5C1A1A">
                 <!--Double line list with text wrapping-->
                 <ListBox x:Name="MainMenu" Margin="0,0,-12,0" SelectionChanged="MainMenu_SelectionChanged" Background="Transparent" Foreground="Black">
-                    <ListBoxItem Content="request favor" FontSize="48" Tag="AddReq"/>
+                    <ListBoxItem Content="request favor" FontSize="48" Tag="AddReq" Tap="ListBoxItem_Tap"/>
                     <ListBoxItem Content="completed favors" FontSize="48" Tag="Completed"/>
                     <ListBoxItem Content="requests near you" FontSize="48" Tag="ShowMap"/>
                 </ListBox>
@@ -40,8 +40,6 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <!--Replace rectangle with image-->
-                                <!--<Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>-->
                                 <Image Source="Images/fbthumb_henri.jpg" Margin="12,0,9,0"/>
                                 <StackPanel Width="311">                                    
                                     <TextBlock Text="frendi yks" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
