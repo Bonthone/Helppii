@@ -37,18 +37,18 @@ namespace helppii
 
         private void ApplicationBarMenuItem_Click(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/PropertiesView.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/SettingsView.xaml", UriKind.Relative));
         }
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/SettingsView.xaml", UriKind.Relative));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             WebBrowserTask wbTask = new WebBrowserTask();
-            wbTask.Uri = new Uri("http://yhteisvastuu.fi/fi/osallistu/tule-vapaaehtoiseksi", UriKind.RelativeOrAbsolute);
+            wbTask.Uri = new Uri("http://yhteisvastuu.fi/fi/osallistu/tule-vapaaehtoiseksi", UriKind.Absolute);
             wbTask.Show();
         }
 
