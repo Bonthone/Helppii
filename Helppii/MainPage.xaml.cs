@@ -35,24 +35,6 @@ namespace helppii
             }
         }
 
-        private void MainMenu_S
-
-        private void MainMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            object item = this.MainMenu.SelectedItem;
-            
-            if (item == null)
-                return;
-
-            ListBoxItem listItem = item as ListBoxItem;
-            string tag = (string)listItem.Tag;
-
-            if (tag == "ShowMap")
-                NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
-            else if (tag == "AddReq")
-                NavigationService.Navigate(new Uri("/NewIssue.xaml", UriKind.Relative));
-        }
-
         private void ApplicationBarMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -68,6 +50,22 @@ namespace helppii
             WebBrowserTask wbTask = new WebBrowserTask();
             wbTask.Uri = new Uri("http://yhteisvastuu.fi/fi/osallistu/tule-vapaaehtoiseksi", UriKind.RelativeOrAbsolute);
             wbTask.Show();
+        }
+
+        private void ListBoxItem_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            object item = this.MainMenu.SelectedItem;
+            
+            if (item == null)
+                return;
+
+            ListBoxItem listItem = item as ListBoxItem;
+            string tag = (string)listItem.Tag;
+
+            if (tag == "ShowMap")
+                NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
+            else if (tag == "AddReq")
+                NavigationService.Navigate(new Uri("/NewIssue.xaml", UriKind.Relative));
         }
     }
 }
