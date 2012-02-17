@@ -22,7 +22,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="PageTitle" Text="open helppies" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="open favors" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -46,9 +46,13 @@
             <ListBox x:Name="MainListBox" Grid.Row="2" ItemsSource="{Binding Items}" SelectionChanged="ListBox_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <ListBoxItem Content="{Binding Title}" />
-                            <ListBoxItem Content=", 200m" />
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Rectangle Fill="#FFFFFF" Width="40" Height="40" Margin="0 0 8 0">
+                                <Rectangle.OpacityMask>
+                                    <ImageBrush Stretch="Fill" ImageSource="{Binding ImagePath}" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                            <ListBoxItem Content="{Binding Title}" FontSize="24" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

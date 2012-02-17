@@ -163,6 +163,9 @@
     <Resource Include="Images\image03.png" />
     <Resource Include="Images\image04.png" />
     <Resource Include="Images\image05.png" />
+    <Resource Include="Images\icon_cat.png" />
+    <Resource Include="Images\icon_chat.png" />
+    <Resource Include="Images\icon_trade.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

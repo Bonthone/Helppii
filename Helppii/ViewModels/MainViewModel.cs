@@ -61,9 +61,17 @@ namespace helppii
         /// </summary>
         public void LoadData()
         {
-            this.Items.Add(new ItemViewModel() { Title = "Viininmaistelu", Location = new GeoCoordinate(52.569593, 10.103504), Description = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu", ImagePath = "Images/icon_car.png" });
-            this.Items.Add(new ItemViewModel() { Title = "Talkoot", Location = new GeoCoordinate(51.569593, 10.103504), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_f.png" });
-            this.Items.Add(new ItemViewModel() { Title = "Jutteluseuraa tarvitaan", Location = new GeoCoordinate(53.569593, 10.103504), Description = "Habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent", ImagePath = "Images/icon_food.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Viininmaistelu", Location = new GeoCoordinate(60.1810, 24.9218), Description = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu", ImagePath = "Images/icon_car.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Talkoot", Location = new GeoCoordinate(60.1817, 24.9248), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_f.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Jutteluseuraa", Location = new GeoCoordinate(60.1870, 24.9228), Description = "Habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent", ImagePath = "Images/icon_food.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Talkoot", Location = new GeoCoordinate(60.1510, 24.9318), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_cat.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Kimppakyyti", Location = new GeoCoordinate(60.1410, 24.9238), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_food.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Talkoot", Location = new GeoCoordinate(60.1510, 24.9258), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_trade.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Bileet", Location = new GeoCoordinate(60.1410, 24.9278), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_car.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Talkoot", Location = new GeoCoordinate(60.1210, 24.9218), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_food.png" });
+            this.Items.Add(new ItemViewModel() { Title = "Jotain", Location = new GeoCoordinate(60.1310, 24.9220), Description = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus", ImagePath = "Images/icon_f.png" });
+
+
 
             this.IsDataLoaded = true;
         }
