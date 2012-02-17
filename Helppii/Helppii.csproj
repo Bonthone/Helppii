@@ -67,7 +67,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Issue.cs" />
     <Compile Include="IssueView.xaml.cs">
       <DependentUpon>IssueView.xaml</DependentUpon>
     </Compile>
@@ -84,9 +83,11 @@
     <Compile Include="SampleData\Images\Images.xaml.cs">
       <DependentUpon>Images.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\IssuesViewModel.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="WindowsPhoneControl1.xaml.cs">
+      <DependentUpon>WindowsPhoneControl1.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -113,6 +114,10 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="WindowsPhoneControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
@@ -137,14 +142,6 @@
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <DesignData Include="SampleData\IssueSampleData1.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-    </DesignData>
-    <DesignData Include="SampleData\IssuesViewModelSampleData.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-    </DesignData>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="SampleData\Images\Images_Files\icon_car.png" />
     <Resource Include="SampleData\Images\Images_Files\icon_f.png" />
     <Resource Include="SampleData\Images\Images_Files\icon_food.png" />
@@ -153,11 +150,6 @@
     <Resource Include="SampleData\Images\Images_Files\image03.png" />
     <Resource Include="SampleData\Images\Images_Files\image04.png" />
     <Resource Include="SampleData\Images\Images_Files\image05.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <DesignData Include="SampleData\IssuesViewModelSampleData.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-    </DesignData>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bin\" />

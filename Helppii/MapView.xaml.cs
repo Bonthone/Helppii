@@ -13,7 +13,6 @@ using Microsoft.Phone.Controls;
 using System.Device.Location;
 using Microsoft.Phone.Controls.Maps;
 using System.Collections.ObjectModel;
-using helppii.ViewModels;
 
 namespace helppii
 {
@@ -25,46 +24,16 @@ namespace helppii
         {
             InitializeComponent();
 
+            // Set the data context of the listbox control to the sample data
+            DataContext = App.ViewModel;
+            
+            this.Loaded += new RoutedEventHandler(MainPage_Loaded);
+
             watcher = new GeoCoordinateWatcher();
             watcher.PositionChanged += new EventHandler<GeoPositionChangedEventArgs<GeoCoordinate>>(watcher_PositionChanged);
             watcher.MovementThreshold = 25;
             watcher.Start();
 
-            DataContext = new IssuesViewModel
-            {
-                Issues = new ObservableCollection<Issue>() 
-                        {
-                            new Issue
-                                {
-                                    Location = new GeoCoordinate(51.569593, 10.103504),
-                                    Title = "Viininmaistelut",
-                                    Description = "Heh juum, olis tollaset maistelut",
-                                    Id = System.Guid.NewGuid()
-                                },
-                            new Issue
-                                {
-                                    Location = new GeoCoordinate(-45.569593, 1.103504),
-                                    Title = "Sohva pitäis siirtää",
-                                    Description = "Heh juum, olis tollanen sohva",
-                                    Id = System.Guid.NewGuid()
-
-                                },
-                            new Issue
-                                {
-                                    Location = new GeoCoordinate(60.2465, 24.8559),
-                                    Title = "Tarviis juttuseuraa",
-                                    Description = "Heh juum, tarviis tollasta seuraa",
-                                    Id = System.Guid.NewGuid()
-                                }, 
-                            new Issue
-                                {
-                                    Location = new GeoCoordinate(60.2, 24.8),
-                                    Title = "Talkooapua",
-                                    Description = "Heh juum, tarviis tollasta talkooapua",
-                                    Id = System.Guid.NewGuid()
-                                }
-                        }
-            };
         }
 
 
@@ -78,16 +47,26 @@ namespace helppii
             //myMap.Children.Add(pin1);
         }
 
-        private void Show_Zoom(object sender, RoutedEventArgs e)
+        // Load data for the ViewModel Items
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-
+            if (!App.ViewModel.IsDataLoaded)
+            {
+                App.ViewModel.LoadData();
+            }
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Issue i = ((ListBox)sender).SelectedItem as Issue;
-            string id = i.Id.ToString();
-            NavigationService.Navigate(new Uri("/IssueView.xaml?id=" + id, UriKind.RelativeOrAbsolute)); 
+            // If selected index is -1 (no selection) do nothing
+            if (MainListBox.SelectedIndex == -1)
+                return;
+
+            // Navigate to the new page
+            NavigationService.Navigate(new Uri("/IssueView.xaml?selectedItem=" + MainListBox.SelectedIndex, UriKind.Relative));
+
+            // Reset selected index to -1 (no selection)
+            MainListBox.SelectedIndex = -1;
         }
 
     }

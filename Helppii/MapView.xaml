@@ -11,7 +11,7 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
-    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps">
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps" d:DataContext="{d:DesignData /SampleData/IssuesViewModelSampleData.xaml}">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -34,7 +34,7 @@
             </Grid.RowDefinitions>
             <!--<Slider x:Name="mySlider" Maximum="25" Minimum="0" Value="10" Grid.Row="0" />-->
             <my:Map x:Name="myMap" ZoomLevel="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay}" ZoomBarVisibility="Visible" Grid.Row="1">
-                <my:MapItemsControl ItemsSource="{Binding Issues}">
+                <my:MapItemsControl ItemsSource="{Binding Items}">
                     <my:MapItemsControl.ItemTemplate>
                         <DataTemplate>
                             <my:Pushpin Location="{Binding Location}" Content="{Binding Title}" />
@@ -42,7 +42,7 @@
                     </my:MapItemsControl.ItemTemplate>
                 </my:MapItemsControl>
             </my:Map>
-            <ListBox Grid.Row="2" ItemsSource="{Binding Issues}" SelectionChanged="ListBox_SelectionChanged">
+            <ListBox x:Name="MainListBox" Grid.Row="2" ItemsSource="{Binding Items}" SelectionChanged="ListBox_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
