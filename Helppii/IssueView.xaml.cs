@@ -56,6 +56,7 @@ namespace helppii
         private void ClaimBox_Click(object sender, RoutedEventArgs e)
         {
             App.ViewModel.Items.RemoveAt(index);
+            MessageBox.Show("Claiming successful");
         }
     }
 }
