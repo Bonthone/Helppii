@@ -20,6 +20,7 @@ namespace helppii
     {
         GeoCoordinateWatcher watcher;
         ItemViewModel item;
+        int index;
 
         public IssueView()
         {
@@ -45,11 +46,16 @@ namespace helppii
             string selectedIndex = "";
             if (NavigationContext.QueryString.TryGetValue("selectedItem", out selectedIndex))
             {
-                int index = int.Parse(selectedIndex);
+                index = int.Parse(selectedIndex);
                 item = App.ViewModel.Items[index];
                 DataContext = item;
                 textBlock2.Text = item.Location.ToString();
             }
+        }
+
+        private void ClaimBox_Click(object sender, RoutedEventArgs e)
+        {
+            App.ViewModel.Items.RemoveAt(index);
         }
     }
 }

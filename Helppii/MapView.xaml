@@ -36,7 +36,9 @@
                 <my:MapItemsControl ItemsSource="{Binding Items}">
                     <my:MapItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <my:Pushpin Location="{Binding Location}" Style="{StaticResource PushpinStyle}" />
+                            <my:Pushpin Location="{Binding Location}" Background="Transparent">
+                                <Image Width="40" Height="40" Source="Images/icon_car.png" />
+                            </my:Pushpin>
                         </DataTemplate>
                     </my:MapItemsControl.ItemTemplate>
                 </my:MapItemsControl>
