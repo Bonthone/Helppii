@@ -36,9 +36,54 @@
                 <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" TextAlignment="Center">Logged in as:</TextBlock>
                 <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" FontWeight="Bold" TextAlignment="Center">gandr</TextBlock>
                 <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" Margin="0,40,0,20">Favorite favor flavors:</TextBlock>
-                <CheckBox Content="Carpool" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True"></CheckBox>
-                <CheckBox Content="General favors" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True"></CheckBox>
-                <CheckBox Content="Dining company" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True"></CheckBox>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/EventTypes/icon_f.png" Grid.Column="0"></Image>
+                    <CheckBox Content="General favors" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True" Grid.Column="1"></CheckBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/EventTypes/icon_car.png" Grid.Column="0"></Image>
+                    <CheckBox Content="Carpool" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True" Grid.Column="1"></CheckBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/EventTypes/icon_chat.png" Grid.Column="0"></Image>
+                    <CheckBox Content="Socialization" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True" Grid.Column="1"></CheckBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/EventTypes/icon_trade.png" Grid.Column="0"></Image>
+                    <CheckBox Content="Used goods" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True" Grid.Column="1"></CheckBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/EventTypes/icon_food.png" Grid.Column="0"></Image>
+                    <CheckBox Content="Dining company" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True" Grid.Column="1"></CheckBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/EventTypes/icon_cat.png" Grid.Column="0"></Image>
+                    <CheckBox Content="Pet care" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True" Grid.Column="1"></CheckBox>
+                </Grid>
             </StackPanel>
         </Grid>
     </Grid>
