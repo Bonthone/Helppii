@@ -79,6 +79,27 @@ namespace helppii
             }
         }
 
+
+        private string _imagePath;
+        /// <summary>
+        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
+        /// </summary>
+        /// <returns></returns>
+        public string ImagePath
+        {
+            get
+            {
+                return _imagePath;
+            }
+            set
+            {
+                if (value != _imagePath)
+                {
+                    _imagePath = value;
+                    NotifyPropertyChanged("ImagePath");
+                }
+            }
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {
