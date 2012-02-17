@@ -34,8 +34,8 @@
             </Grid.RowDefinitions>
             <StackPanel>
                 <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" TextAlignment="Center">Logged in as:</TextBlock>
-                <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" FontWeight="Bold" TextAlignment="Center">asd</TextBlock>
-                <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}">Acceptable favors</TextBlock>
+                <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" FontWeight="Bold" TextAlignment="Center">gandr</TextBlock>
+                <TextBlock FontSize="{StaticResource PhoneFontSizeMediumLarge}" Margin="0,40,0,20">Favorite favor flavors:</TextBlock>
                 <CheckBox Content="Carpool" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True"></CheckBox>
                 <CheckBox Content="General favors" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True"></CheckBox>
                 <CheckBox Content="Dining company" FontSize="{StaticResource PhoneFontSizeSmall}" IsChecked="True"></CheckBox>
