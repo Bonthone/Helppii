@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Tasks;
 
 namespace helppii
 {
@@ -34,7 +35,24 @@ namespace helppii
             }
         }
 
-        private void MainMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ApplicationBarMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/PropertiesView.xaml", UriKind.Relative));
+        }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WebBrowserTask wbTask = new WebBrowserTask();
+            wbTask.Uri = new Uri("http://yhteisvastuu.fi/fi/osallistu/tule-vapaaehtoiseksi", UriKind.RelativeOrAbsolute);
+            wbTask.Show();
+        }
+
+        private void ListBoxItem_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             object item = this.MainMenu.SelectedItem;
             
@@ -46,6 +64,8 @@ namespace helppii
 
             if (tag == "ShowMap")
                 NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.Relative));
+            else if (tag == "AddReq")
+                NavigationService.Navigate(new Uri("/NewIssue.xaml", UriKind.Relative));
         }
     }
 }

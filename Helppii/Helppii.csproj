@@ -131,12 +131,14 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Images\appbar.save.rest.png" />
-    <Resource Include="Images\appbar.stop.rest.png" />
+    <Content Include="Images\appbar.feature.settings.rest.png" />
+    <Content Include="Images\appbar.save.rest.png" />
+    <Content Include="Images\appbar.stop.rest.png" />
     <Resource Include="Images\yhteisvastuubg_haalea.png" />
     <Resource Include="Images\fbthumb_henri.jpg" />
     <Resource Include="Images\fbthumb_joonas.jpg" />
     <Resource Include="Images\fbthumb_mikael.jpg" />
+    <Resource Include="Images\tule-keraajaksi.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

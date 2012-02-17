@@ -121,6 +121,25 @@ namespace Expression.Blend.SampleData.Images
 				}
 			}
 		}
+
+		private string _EventDate = string.Empty;
+
+		public string EventDate
+		{
+			get
+			{
+				return this._EventDate;
+			}
+
+			set
+			{
+				if (this._EventDate != value)
+				{
+					this._EventDate = value;
+					this.OnPropertyChanged("EventDate");
+				}
+			}
+		}
 	}
 #endif
 }
