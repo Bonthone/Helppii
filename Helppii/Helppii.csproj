@@ -151,14 +151,10 @@
     <Resource Include="Images\EventTypes\icon_car.png" />
     <Resource Include="Images\EventTypes\icon_f.png" />
     <Resource Include="Images\EventTypes\icon_food.png" />
-    <Resource Include="Images\icon_car.png" />
-    <Resource Include="Images\icon_f.png" />
-    <Resource Include="Images\icon_food.png" />
-    <Resource Include="Images\image01.png" />
-    <Resource Include="Images\image02.png" />
-    <Resource Include="Images\image03.png" />
-    <Resource Include="Images\image04.png" />
-    <Resource Include="Images\image05.png" />
+    <Resource Include="Images\logo_150.png" />
+    <Resource Include="Images\EventTypes\icon_cat.png" />
+    <Resource Include="Images\EventTypes\icon_chat.png" />
+    <Resource Include="Images\EventTypes\icon_trade.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
