@@ -44,12 +44,18 @@ namespace helppii
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             string selectedIndex = "";
+            string isNew = "";
             if (NavigationContext.QueryString.TryGetValue("selectedItem", out selectedIndex))
             {
                 index = int.Parse(selectedIndex);
                 item = App.ViewModel.Items[index];
                 DataContext = item;
                 textBlock2.Text = item.Location.ToString();
+                if (NavigationContext.QueryString.TryGetValue("new", out isNew))
+                {
+                    ClaimBox.Visibility = System.Windows.Visibility.Collapsed;
+                    Cancelbox.Visibility = System.Windows.Visibility.Visible;
+                }
             }
         }
 
@@ -58,6 +64,20 @@ namespace helppii
             App.ViewModel.Items.RemoveAt(index);
             App.ViewModel.CommitedItems.Add(item);
             MessageBox.Show("Claiming successful");
+            if (NavigationService.CanGoBack)
+            {
+                NavigationService.GoBack();
+            }
+            else
+            {
+                NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void Cancelbox_Click(object sender, RoutedEventArgs e)
+        {
+            App.ViewModel.Items.RemoveAt(index);
+            MessageBox.Show("Cancel successful");
             if (NavigationService.CanGoBack)
             {
                 NavigationService.GoBack();

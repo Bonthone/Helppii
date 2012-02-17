@@ -31,6 +31,7 @@
             <TextBlock x:Name="textBlock1" Text="{Binding Description}" />
             <TextBlock x:Name="textBlock2" />
                 <Button x:Name="ClaimBox" Content="Claim" Click="ClaimBox_Click" />
+                <Button x:Name="Cancelbox" Content="Cancel" Click="Cancelbox_Click" Visibility="Collapsed" />
             </StackPanel>
         </Grid>
     </Grid>
