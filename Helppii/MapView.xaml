@@ -36,7 +36,7 @@
                 <my:MapItemsControl ItemsSource="{Binding Items}">
                     <my:MapItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <my:Pushpin Location="{Binding Location}" Content="{Binding Title}" />
+                            <my:Pushpin Location="{Binding Location}" Style="{StaticResource PushpinStyle}" />
                         </DataTemplate>
                     </my:MapItemsControl.ItemTemplate>
                 </my:MapItemsControl>
@@ -67,11 +67,4 @@
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 -->
-    <phone:PhoneApplicationPage.Resources>
-        <ControlTemplate x:Key="PushPinTemplate">
-            <Grid>
-                <Ellipse Fill="Green" Width="15" Height="15" />
-            </Grid>
-        </ControlTemplate>
-    </phone:PhoneApplicationPage.Resources>
 </phone:PhoneApplicationPage>

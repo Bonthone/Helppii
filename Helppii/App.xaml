@@ -4,13 +4,22 @@
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Images" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
-    x:Class="helppii.App"
-    >
+    x:Class="helppii.App" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps" >
 
     <!--Application Resources-->
     <Application.Resources>
     	<SampleData:Images x:Key="Images" d:IsDataSource="True"/>
+        <Style TargetType="my:Pushpin" x:Key="PushpinStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="my:Pushpin">
+                        <Image Width="40" Height="40" Source="Images/icon_car.png" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
+    
 
     <Application.ApplicationLifetimeObjects>
         <!--Required object that handles lifetime events for the application-->
@@ -18,5 +27,7 @@
             Launching="Application_Launching" Closing="Application_Closing" 
             Activated="Application_Activated" Deactivated="Application_Deactivated"/>
     </Application.ApplicationLifetimeObjects>
+    
+
 
 </Application>

@@ -55,11 +55,13 @@
     <Reference Include="Microsoft.Phone.Controls" />
     <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Phone.Reactive" />
     <Reference Include="System.Device" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
@@ -149,6 +151,14 @@
     <Resource Include="Images\EventTypes\icon_car.png" />
     <Resource Include="Images\EventTypes\icon_f.png" />
     <Resource Include="Images\EventTypes\icon_food.png" />
+    <Resource Include="Images\icon_car.png" />
+    <Resource Include="Images\icon_f.png" />
+    <Resource Include="Images\icon_food.png" />
+    <Resource Include="Images\image01.png" />
+    <Resource Include="Images\image02.png" />
+    <Resource Include="Images\image03.png" />
+    <Resource Include="Images\image04.png" />
+    <Resource Include="Images\image05.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
