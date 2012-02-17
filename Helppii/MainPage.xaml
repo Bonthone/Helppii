@@ -76,10 +76,9 @@
             <controls:PanoramaItem Header="sponsor" Foreground="#FF5C1A1A">
                 <ListBox Margin="0,0,-12,0" Foreground="Black">
                     <StackPanel>
-                        <TextBlock Foreground="Black">Helppii's sponsor of the month is</TextBlock>
-                        <TextBlock FontWeight="Bold" Foreground="Black">Yhteisvastuukeräys.</TextBlock>
-                        <TextBlock TextWrapping="Wrap" Margin="0,30,0,0" Foreground="Black">Yhteisvastuu on lähimmäisenrakkauden kansanliike ja evankelis-luterilaisen kirkon vuosittainen suurkeräys, joka auttaa hädänalaisia syntyperään, uskontoon tai poliittiseen vakaumukseen katsomatta Suomessa ja kehitysmaissa. 60 % tuotosta menee Kirkon Ulkomaanavun välityksellä kehitysyhteistyöhön ja katastrofiapuun. 20 % käytetään vuosittain valittavaan kohteeseen Suomessa ja 20 % kirkon ja seurakuntien tekemään avustustyöhön.</TextBlock>
-                        <!--<Image Source="Images/tule-keraajaksi.png" Margin="12,30,9,30"/>-->
+                        <TextBlock Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}">Helppii's sponsor of the month is</TextBlock>
+                        <TextBlock FontWeight="Bold" Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}">Yhteisvastuukeräys.</TextBlock>
+                        <TextBlock TextWrapping="Wrap" Margin="0,30,0,0" Foreground="Black" FontSize="{StaticResource PhoneFontSizeMediumLarge}">Yhteisvastuu on lähimmäisenrakkauden kansanliike ja evankelis-luterilaisen kirkon vuosittainen suurkeräys, joka auttaa hädänalaisia syntyperään, uskontoon tai poliittiseen vakaumukseen katsomatta Suomessa ja kehitysmaissa. 60 % tuotosta menee Kirkon Ulkomaanavun välityksellä kehitysyhteistyöhön ja katastrofiapuun. 20 % käytetään vuosittain valittavaan kohteeseen Suomessa ja 20 % kirkon ja seurakuntien tekemään avustustyöhön.</TextBlock>
                         <Button Click="Button_Click" Height="180" BorderBrush="{x:Null}">
                         	<Button.Background>
                         		<ImageBrush Stretch="None" ImageSource="Images/tule-keraajaksi.png"/>

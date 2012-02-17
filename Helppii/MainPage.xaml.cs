@@ -35,6 +35,8 @@ namespace helppii
             }
         }
 
+        private void MainMenu_S
+
         private void MainMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             object item = this.MainMenu.SelectedItem;
