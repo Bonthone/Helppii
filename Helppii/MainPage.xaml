@@ -24,7 +24,7 @@
 	</phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent" DataContext="{Binding Source={StaticResource RecentFavors}}">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
  
         <!--Panorama control-->
         <controls:Panorama Title="helppii" Foreground="#FF5C1A1A">
@@ -43,7 +43,7 @@
             </controls:PanoramaItem>
  
             <!-- recent stories -->
-            <controls:PanoramaItem Header="recent favors" Foreground="#FF5C1A1A">
+            <controls:PanoramaItem Header="recent favors" Foreground="#FF5C1A1A" DataContext="{Binding Source={StaticResource RecentFavors}}">
                 <!--Double line list with image placeholder and text wrapping-->
                 <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Collection}" Foreground="Black">
                 	<ListBox.ItemTemplate>
@@ -63,14 +63,14 @@
             <!-- todo -->
             <controls:PanoramaItem Header="todo" Foreground="#FF5C1A1A">
                 <!--Double line list with image placeholder and text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Foreground="Black">
+                
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding CommitedItems}" Foreground="Black">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
                                 <Image Source="Images/EventTypes/icon_f.png" Margin="12,0,9,0" Width="75"/>
                                 <StackPanel Width="311">
-                                    <TextBlock Foreground="black" Text="Change my mother's light bulb" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                    <TextBlock Foreground="black" Text="My old mom can't do it alone. :(" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                    <TextBlock Foreground="black" Text="{Binding Title}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>

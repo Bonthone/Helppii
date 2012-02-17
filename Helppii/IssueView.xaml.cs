@@ -56,7 +56,16 @@ namespace helppii
         private void ClaimBox_Click(object sender, RoutedEventArgs e)
         {
             App.ViewModel.Items.RemoveAt(index);
+            App.ViewModel.CommitedItems.Add(item);
             MessageBox.Show("Claiming successful");
+            if (NavigationService.CanGoBack)
+            {
+                NavigationService.GoBack();
+            }
+            else
+            {
+                NavigationService.Navigate(new Uri("/MapView.xaml", UriKind.RelativeOrAbsolute));
+            }
         }
     }
 }

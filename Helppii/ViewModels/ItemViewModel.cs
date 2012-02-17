@@ -100,6 +100,27 @@ namespace helppii
                 }
             }
         }
+
+        private bool _claimed;
+        /// <summary>
+        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
+        /// </summary>
+        /// <returns></returns>
+        public bool Claimed
+        {
+            get
+            {
+                return _claimed;
+            }
+            set
+            {
+                if (value != _claimed)
+                {
+                    _claimed = value;
+                    NotifyPropertyChanged("ImagePath");
+                }
+            }
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {
