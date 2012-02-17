@@ -4,7 +4,7 @@
 	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
 	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="NewFavorPage"
 	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
 	x:Class="helppii.NewIssue"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -43,12 +43,12 @@
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>			
 				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto" MinHeight="69"/>
 				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="*"/>
+				<RowDefinition/>
 			</Grid.RowDefinitions>
-			<TextBox Grid.Row="1" Margin="8,29,8,0" TextWrapping="Wrap" Text="title" d:LayoutOverrides="Height"/>
-			<ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="69" Grid.Row="2" VerticalAlignment="Top" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" Margin="8,31,0,0" Background="{x:Null}">
+			<TextBox Grid.Row="1" Margin="8,29,8,8" TextWrapping="Wrap" Text="title"/>
+			<ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="69" Grid.Row="2" VerticalAlignment="Top" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" Margin="8,0,0,0" Background="{x:Null}">
 <ListBox.ItemsPanel>
 
 <ItemsPanelTemplate>
@@ -60,20 +60,16 @@
 </ListBox.ItemsPanel>
 				
 </ListBox>
-			<TextBlock Margin="149,104,136,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding SelectedItem.EventTypeName, ElementName=listBox}" VerticalAlignment="Top" d:LayoutOverrides="Width"/>
-			<TextBox Margin="8,34,8,0" Grid.Row="4" TextWrapping="Wrap" Text="description" VerticalAlignment="Top" Height="151" InputScope="Text" VerticalScrollBarVisibility="Auto"/>
+			<TextBlock Margin="8,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding SelectedItem.EventTypeName, ElementName=listBox, FallbackValue=event type}" VerticalAlignment="Top" TextAlignment="Center"/>
+			<TextBox Margin="8,8,8,0" Grid.Row="4" TextWrapping="Wrap" Text="description" VerticalAlignment="Top" Height="151" InputScope="Text" VerticalScrollBarVisibility="Auto" d:LayoutOverrides="VerticalAlignment"/>
 		</Grid>
 	</Grid>
 	
 	    <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="Images/appbar.save.rest.png" Text="Save"/>
-            <shell:ApplicationBarIconButton IconUri="Images/appbar.stop.rest.png" Text="Cancel"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="Save"/>
-                <shell:ApplicationBarMenuItem Text="Cancel"/>
-            </shell:ApplicationBar.MenuItems>
+            <shell:ApplicationBarIconButton x:Name="SaveButton" IconUri="Images/appbar.save.rest.png" Text="Save" Click="ApplicationBarSaveButton_Click"/>
+            <shell:ApplicationBarIconButton x:Name="CancelButton" IconUri="Images/appbar.stop.rest.png" Text="Cancel" Click="ApplicationBarCancelButton_Click" />
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>
